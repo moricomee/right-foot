@@ -12,10 +12,23 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+        <!-- Google Fonts for fallback -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Bree+Serif&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/animations.css">
         <link rel="stylesheet" href="css/main.css">
         <style>
+        /* Force sans-serif font for body */
+        body {
+            font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+        }
+        
+        /* Ensure headings use sans-serif or the decorative font */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Bree Serif', 'Open Sans', Arial, sans-serif !important;
+        }
+        
         /* Logo size fix */
         .navbar-brand img {
             max-height: 60px;
@@ -620,7 +633,7 @@
       <div class="col-sm-12 text-center">
        
         <h2 class="contact-email to_fade" id="contact"><span>
-          <i class="rt-icon-paperplane"></i> <a href="mailto:info@right-foot.co.uk">info@right-foot.co.uk</a></span>
+          <i class="rt-icon-paperplane"></i> <a href="/cdn-cgi/l/email-protection#3c55525a537c4e555b5448115a535348125f53124957"><span class="__cf_email__" data-cfemail="e0898e868fa09289878894cd868f8f94ce838fce958b">[email&#160;protected]</span></a></span>
         </h2>
         
       </div>
@@ -659,7 +672,7 @@
 </div>
 
   
-        <script src="js/vendor/respond.min.js"></script>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/vendor/respond.min.js"></script>
         <script src="js/vendor/placeholdem.min.js"></script>
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
@@ -707,13 +720,4 @@
             
             function nextSlide() {
                 slides.eq(currentSlide).removeClass('active');
-                currentSlide = (currentSlide + 1) % totalSlides;
-                slides.eq(currentSlide).addClass('active');
-            }
-            
-            // Change slide every 5 seconds
-            setInterval(nextSlide, 5000);
-        });
-        </script>
-    </body>
-</html>
+                currentSlide = (currentSlide + 1) %
